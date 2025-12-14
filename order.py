@@ -1,12 +1,7 @@
-def first(size,*args):
-    return size + len(args)
-    print(first)
+from datetime import datetime
+def get_days_from_today(date_str) -> int:
+    target_date = datetime.strptime(date_str, "%Y-%m-%d").date()
+    current_date = datetime.today().date()
+    delta = target_date - current_date
+    return delta.days
 
-first(1, 2)
-
-
-def second(size,**kwargs):
-    return size + len(kwargs)
-    print(second)
-
-second(1, a=2, b=3) # spasibo nahuj
