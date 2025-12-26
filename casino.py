@@ -10,5 +10,5 @@ def get_numbers_ticket (min, max, quantity):
     ticket_numbers = set()
     while len(ticket_numbers) < quantity: 
         ticket_numbers.add(random.randint(min, max)) 
-    return ticket_numbers 
+    return sorted(list(ticket_numbers)) 
 print("Вы получили следующие номера билета:", get_numbers_ticket(1, 1000, 6)) 
