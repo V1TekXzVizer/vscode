@@ -7,3 +7,9 @@ def get_numbers_ticket(min,max, user_inmut):
         ticet_numbers.add(random.randint(min, max))
     return sorted(list(ticet_numbers))
 print("Ваши случайные числа: ", get_numbers_ticket(1, 1000, user_input))
+ 
+
+
+
+
+ 
