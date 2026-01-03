@@ -1,3 +1,9 @@
+phone_number = "    +38(050)123-32-34"
+"     0503451234"
+"(050)8889900"
+"38050-111-22-22"
+"38050 111 22 11   "
+
 import re 
 def normalize_phone_number(phone_number: str) -> str: 
     cleaned = re.sub(r"[^/d+]", "",phone_number) 
