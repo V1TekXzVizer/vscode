@@ -10,7 +10,7 @@ def get_numbers_ticket(min, max, quantity):
             return [] 
         if quantity_num < 1 or quantity_num > (max_num - min_num + 1):
             return []
-    except ValueError, TypeError:
+    except (ValueError, TypeError):
         return [] 
     ticket_numbers = set()
     while len(ticket_numbers) < quantity_num:
@@ -20,3 +20,4 @@ def get_numbers_ticket(min, max, quantity):
 print("Ваши случайные числа: ", get_numbers_ticket(10, 5, 10)) 
 print("Ваши случайные числа: ", get_numbers_ticket(1, 1000, 5))
         
+
